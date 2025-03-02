@@ -1,66 +1,54 @@
 #!/bin/bash
 
-PACKAGES=(
-    bzip2
-    bzip2-devel
-    code
-    cronie
-    dotnet
-    ffmpeg
-    firefox
-    fzf
-    gcc
-    gdbm-devel
-    gh
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+
+CASKS=(
+    alacritty
+    discord
+    docker
     gimp
-    git
-    golang
-    htop
-    kernel-devel
-    lame
-    lame-libs
-    libffi-devel
-    libuuid-devel
-    make
-    nodejs
-    nvim
-    openssl-devel
-    openvpn
-    pip
-    python
-    readline-devel
-    sqlite
-    sqlite-devel
-    telegram-desktop
-    thefuck
-    tk-devel
-    tmux
+    librewolf
+    protonvpn
+    spotify
+    telegram
     transmission
-    transmission-cli
-    transmission-gtk
-    util-linux-user
+    visual-studio-code
     vlc
     wireshark
-    xclip
-    xz-devel
-    zlib-devel
+)
+
+FORMULAE=(
+    ffmpeg
+    fnm
+    fzf
+    gcc
+    gh
+    git
+    go
+    htop
+    make
+    mkcert
+    nss
+    nvim
+    openssl@3
+    openvpn
+    python@3.11
+    sqlite
+    thefuck
+    tmux
+    transmission-cli
+    wget
     zsh
 )
 
-echo "Adding RPM Fusion repos..."
-sudo dnf install \
-    https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-    https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
-    -y
+brew update
+brew upgrade
 
-echo "Updating packages..."
-sudo dnf update -y
-sudo dnf upgrade -y
-echo "Installing packages..."
-sudo dnf install ${PACKAGES[@]} --allowerasing --skip-broken -y
+echo "Installing casks..."
+brew install --cask ${CASKS[@]} --no-quarantine
 
-echo "Adding user to pkg-build group..."
-sudo usermod -a -G pkg-build $USER
+echo "Installing formulae..."
+brew install ${FORMULAE[@]}
 
 echo "Installing rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

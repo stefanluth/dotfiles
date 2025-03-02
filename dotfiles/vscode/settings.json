@@ -5,6 +5,7 @@
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[python]": { "editor.formatOnType": true },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "editor.fontFamily": "JetBrains Mono",
   "editor.formatOnSave": true,
@@ -14,6 +15,12 @@
   "editor.rulers": [120],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
   "files.insertFinalNewline": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.printWidth": 112,

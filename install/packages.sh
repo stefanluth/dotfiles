@@ -6,8 +6,8 @@ CASKS=(
     alacritty
     discord
     docker
+    firefox
     gimp
-    librewolf
     protonvpn
     spotify
     telegram

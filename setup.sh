@@ -12,8 +12,8 @@ bash $HOME/code/dotfiles/install/fonts.sh
 echo "Installing Steam..."
 bash $HOME/code/dotfiles/install/steam.sh
 
-echo "Installing LibreWolf extensions..."
-bash $HOME/code/dotfiles/install/extensions/librewolf.sh
+echo "Installing Firefox extensions..."
+bash $HOME/code/dotfiles/install/extensions/firefox.sh
 
 echo "Installing VSCode extensions..."
 bash $HOME/code/dotfiles/install/extensions/vscode.sh

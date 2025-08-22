@@ -17,10 +17,13 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension foxundermoon.shell-format
 code --install-extension GitHub.copilot
+code --install-extension GitHub.copilot-chat
+code --install-extension inferrinizzard.prettier-sql-vscode
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.python
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension oderwat.indent-rainbow
 code --install-extension qwtel.sqlite-viewer
+code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension tamasfe.even-better-toml

@@ -11,10 +11,6 @@ echo "Installing flatpaks..."
 echo "---------------------------------------------------"
 bash $HOME/dotfiles/install/flatpaks.sh
 echo "---------------------------------------------------"
-echo "Installing alacritty..."
-echo "---------------------------------------------------"
-bash $HOME/dotfiles/install/alacritty.sh
-echo "---------------------------------------------------"
 echo "Installing docker..."
 echo "---------------------------------------------------"
 bash $HOME/dotfiles/install/docker.sh

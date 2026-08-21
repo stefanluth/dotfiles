@@ -1,0 +1,6 @@
+background-opacity = 0.96
+maximize = true
+window-width = 9999
+window-height = 9999
+confirm-close-surface = false
+link-url = true

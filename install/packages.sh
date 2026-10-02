@@ -5,7 +5,6 @@ PACKAGES=(
     bzip2-devel
     code
     cronie
-    dotnet
     ffmpeg
     firefox
     fzf
@@ -14,7 +13,6 @@ PACKAGES=(
     gh
     gimp
     git
-    golang
     htop
     kernel-devel
     lame
@@ -22,8 +20,6 @@ PACKAGES=(
     libffi-devel
     libuuid-devel
     make
-    nodejs
-    nvim
     openssl-devel
     openvpn
     pip
@@ -35,12 +31,8 @@ PACKAGES=(
     thefuck
     tk-devel
     tmux
-    transmission
-    transmission-cli
-    transmission-gtk
     util-linux-user
-    vlc
-    wireshark
+    wl-clipboard
     xclip
     xz-devel
     zlib-devel
@@ -61,9 +53,6 @@ sudo dnf install ${PACKAGES[@]} --allowerasing --skip-broken -y
 
 echo "Adding user to pkg-build group..."
 sudo usermod -a -G pkg-build $USER
-
-echo "Installing rust..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo "Getting tpm..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

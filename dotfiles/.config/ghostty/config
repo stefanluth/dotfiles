@@ -4,3 +4,6 @@ window-width = 9999
 window-height = 9999
 confirm-close-surface = false
 link-url = true
+clipboard-paste-protection = false
+copy-on-select = clipboard
+right-click-action = paste
